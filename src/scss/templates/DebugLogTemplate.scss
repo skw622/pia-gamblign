@@ -1,0 +1,30 @@
+#debuglog-template {
+  max-height: 580px;
+
+  .emptytext {
+    margin-top: 60px;
+    color: #999;
+  }
+
+  .still-loading {
+    padding: 10px 65px;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+
+    li { margin-bottom: 10px; }
+    li:last-child { margin-bottom: 0px; }
+    li span { overflow-wrap: break-word; }
+
+    time {
+      color: #777;
+      font-size: 11px;
+    }
+  }
+}

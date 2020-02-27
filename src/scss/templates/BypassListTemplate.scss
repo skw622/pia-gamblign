@@ -1,0 +1,29 @@
+#bypasslist-template {
+  max-height: 580px;
+  overflow: auto;
+
+  .bypass-wrap {
+    padding: 15px;
+
+    .introtext {
+      font-size: 11px;
+      color: #888;
+
+      strong {
+        font-weight: 500;
+        color: #555355;
+        text-decoration: underline;
+      }
+    }
+
+    .bl_sectionheader {
+      font-size: 13px;
+      color: #333;
+      font-weight: 500;
+      display: block;
+      clear: both;
+
+      &.instructions { margin-bottom: 5px; }
+    }
+  }
+}
