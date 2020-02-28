@@ -1,6 +1,6 @@
 #authenticated-template {
   .connection {
-    border-top: thin solid #F2F0F2;
+    border-top: thin solid rgb(7, 87, 20);
 
     .external-buttons {
       margin: 5px 7px;
@@ -19,7 +19,7 @@
         cursor: pointer;
         border: none;
         margin-left: 60px;
-        background-color: #fff;
+        background-color: transparent;
 
         &.disabled {
           cursor: not-allowed;
@@ -30,12 +30,12 @@
         }
 
         &:hover {
-          background-color: #fff;
+          background-color: transparent;
           background-position: 0px -30px;
         }
 
         &:active {
-          background-color: #fff;
+          background-color: transparent;
           background-position: 0px -30px;
         }
 

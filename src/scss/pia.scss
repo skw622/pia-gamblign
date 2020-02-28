@@ -59,6 +59,7 @@
 @import "templates/PleaseWaitTemplate";
 @import "templates/SettingsTemplate";
 @import "templates/UncontrollableTemplate";
+@import "custom";
 
 html {
   margin: 0;
@@ -75,6 +76,7 @@ body {
 *, *:before, *:after { box-sizing: inherit; }
 
 #pia {
+  background-color: #333542;
   min-height: $appMinHeight;
   width: $appWidth;
   padding: $appVertPadding $appSidePadding;

@@ -41,14 +41,14 @@ export default function () {
       if (region && this.app.proxy.enabled()) {
         const regionName = region.localizedName();
         return (
-          <div className="settingswarning-connected noselect">
+          <div className="settingswarning-connected warn-div noselect">
             { t('SettingsWarningConnected', { browser: this.buildinfo.browser, region: regionName }) }
           </div>
         );
       }
 
       return (
-        <div className="settingswarning-disconnected noselect">
+        <div className="settingswarning-disconnected warn-div noselect">
           { t('SettingsWarning') }
         </div>
       );
@@ -121,7 +121,7 @@ export default function () {
 
             <WarningDiv />
 
-            <SettingSections
+            <SettingSections className="setting-sections"
               onDebugClick={this.onDebugClick}
               languageDropdownBuilder={this.languageDropdownBuilder}
             />

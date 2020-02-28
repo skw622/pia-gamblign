@@ -97,14 +97,13 @@ class LoginForm extends Component {
             <div className="resetpw text-center">
               <a
                 href={online ? this.resetPasswordURL() : undefined}
-                karget="_blank"
+                target="_blank"
                 rel="noopener noreferrer"
                 className={online ? '' : 'disabled'}
               >
                 { t('ResetPasswordText') }
               </a>
             </div>
-
             <div className="loader login-loader hidden" />
           </div>
         </div>

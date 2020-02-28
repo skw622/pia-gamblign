@@ -52,7 +52,7 @@ class PageTitle extends Component {
             />
           </div>
 
-          <div className="col-xs-8 upcase text">
+          <div className="col-xs-8 upcase text setting-title">
             { text }
           </div>
         </div>

@@ -5,8 +5,8 @@ const CompanyLogo = () => {
     <div className="row company-logo">
       <div className="col-xs-12 text-center">
         <img
-          width="210"
-          src="/images/logo@2x.png"
+          width="100"
+          src="/images/gambling-logo.png"
           alt="Private Internet Access Logo"
           title="Private Internet Access"
         />

@@ -48,7 +48,7 @@ class CurrentRegion extends Component {
           { t('CurrentRegionText') }
         </div>
 
-        <div className="name">
+        <div className="name region-name">
           {
             this.region
               ? this.region.localizedName()

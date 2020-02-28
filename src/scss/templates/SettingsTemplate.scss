@@ -1,7 +1,6 @@
 #settings-template {
   max-height: 580px;
   overflow: auto;
-
   #settings {
     padding: 0;
 
@@ -17,13 +16,17 @@
         &.uncontrollable-setting span { opacity: 0.5; }
       }
     }
-
+    .warn-div { background-color: #333542;}
     .sectionwrapper.bypass .lefticon {
       -webkit-transform: rotate(270deg);
       -moz-transform: rotate(270deg);
       -o-transform: rotate(270deg);
       -ms-transform: rotate(270deg);
       transform: rotate(270deg);
+    }
+
+    .setting-sections {
+      background-color: #333542;
     }
 
     .panelfooter {

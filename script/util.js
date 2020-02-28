@@ -64,6 +64,7 @@ function execWithOutput(command, rejectOnErr = false) {
 // generate the command to pack the extension
 function generatePackCommand(browser) {
   // general pack flags
+
   const packExtension = `--pack-extension=${webstoreDir}`;
   const packExtensionKey = `--pack-extension-key=${webstoreKey}`;
   const chromeMacApp = `/Applications/Google\\ Chrome.app/Contents/MacOS/Google\\ Chrome`;
@@ -110,8 +111,9 @@ function compileCode(browser, release = false) {
   });
 }
 
-function packExtension(browser) {
+function packExtension(browsername) {
   // package using Chrome browser
+  let browser = browsername ? browsername : 'chrome'
   console.log('packing through browser...');
   try { execSync(generatePackCommand(browser)); }
   catch (err) { throw new Error(err); }
